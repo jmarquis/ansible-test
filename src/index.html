@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MODULE">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="styles/app.css">
+
+	</head>
+
+	<body>
+
+		<div ng-controller="TestController">
+			<input type="text" ng-model="something">
+			{{ something }}
+		</div>
+
+		<script src="//localhost:29000/socket.io/socket.io.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="//localhost:8000/src/ansible.js"></script>
+
+	</body>
+
+</html>
