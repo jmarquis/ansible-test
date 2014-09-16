@@ -8,7 +8,6 @@ angular.module("MODULE", ["ansible"])
 
 	.controller("TestController", function ($scope, Ansible) {
 
-		var something = new Ansible("/test/123");
-		$scope.something = something.data;
+		$scope.something = new Ansible("/test/123");
 
 	});
