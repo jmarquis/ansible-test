@@ -2,7 +2,8 @@
 
 	"libs": [
 		"./bower_components/angular/angular.js",
-		"./bower_components/html5shiv/dist/html5shiv.js"
+		"./bower_components/html5shiv/dist/html5shiv.js",
+		"./bower_components/rowt/rowt.js"
 	],
 
 	"app": [

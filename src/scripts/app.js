@@ -8,6 +8,13 @@ angular.module("MODULE", ["ansible"])
 
 	.controller("TestController", function ($scope, Ansible) {
 
-		$scope.something = new Ansible("/test/123");
+		var Person = new Ansible("/test/:id", {
+			id: 123
+		});
+
+		$scope.person = Person.get({}, function () {
+			$scope.person.blah = "bleh";
+			$scope.person.$save();
+		});
 
 	});
